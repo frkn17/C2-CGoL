@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+        <div id="container">
+            <div id="gameOfLife">
+                
+            </div>
+            <div id="controllers">
+                <span>PreSets</span>
+            <select id="presets" onchange="presetsChange();">
+                <option value="start">Select a Preset</option>
+                <option value="glider">Glider</option>
+                <option value="pulsar">Pulsar</option>
+                <option value="spaceship">Spaceship</option>
+                <option value="circle">Circle Of Fire</option>
+                <option value="quadople">Quadople</option>
+            </select>
+            <button id="nextStep" class="c-buttons">Next Step</button>
+            <button id="animate" class="c-buttons">Animate</button>
+            <button id="stop" class="c-buttons">Stop</button>
+            <button id="clear" class="c-buttons" >Clear All</button>
+            <p id="population">Population : 0</p>
+
+                
+            </div>
+            <div id="clear"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
